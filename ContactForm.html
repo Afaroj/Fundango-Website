@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+            body{
+                background: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80') center center/cover;
+                color: white;
+                
+            }
+            .container{
+                /* border: 2px solid; */
+                margin: 50px 700px 100px 200px ;
+                width: 60%;
+                height: 80%;
+            }
+            .first{
+                margin-bottom: 50px;
+            }
+            .second{
+                margin-bottom: 20px;
+            }
+            .your-email{
+                margin-bottom: 20px;
+
+            }
+            .phone{
+                margin-bottom: 20px;
+
+            }
+            .message-subject{
+                margin-bottom: 20px;
+
+            }
+            .button{
+                width: 15%;
+                height: 40px;
+                cursor: pointer;
+                background-color: transparent;
+                font-family: Arial black;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+            }
+            .button:hover{
+               background-color:rgb(50, 173, 132);
+               content: '\00bb';
+            }
+            body .button_1{
+            float:inline-start;
+            background-color: transparent;
+            font-size: medium;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 0px;
+            border-color: white;
+        }
+        .button_1:hover{
+            background-color: rgb(67, 110, 71);
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/index.html">
+        <button class="button_1">Go back to main page</button>
+    </a>
+    <div class="container">
+        <div class="first">
+
+            <h1>
+                Contact Form
+            </h1>
+            <p>Please fill in your information and will be sending your order in no time</p>
+        </div>
+        <div class='second'>
+            <label for="your-name">Your Name</label>
+            <input type="text" id="your-name" placeholder="First Name" required>
+            <input type="text" id="your-name" placeholder="Last Name"required>
+        </div>
+        <div class="your-email">
+            <label for="your-email">Your Email</label>
+            <input type="email" id="your-email" placeholder="abc123@gmail.com"required>
+            
+        </div>
+        <div class="phone">
+            <label for="phone">Phone*</label>
+            <input type="number" id="phone" placeholder="###">
+            <input type="number" id="phone" placeholder="###">
+            <input type="number" id="phone" placeholder="####">
+        </div class='message-subject'>
+        <div class='message-subject'>
+            <label for="message-subject">Message Subject*</label>
+            <select name="" id="message-subject" required>
+                <option value="" selected>Other</option>
+                <option value="1">Formal</option>
+                <option value="1">InFormal</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message*</label>
+            <textarea name="" id="message"></textarea>
+        </div>
+        <hr>
+        <div >
+            <input class="button" type="Submit">
+        </div>
+    </div>
+    </body>
+</html>
